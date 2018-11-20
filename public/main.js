@@ -16,7 +16,6 @@ pause.addEventListener("click", () => {
 
 socket.on("video", function(data) {
   if (data.state === "play") {
-    console.log('play start')
     video.play();
   } else {
     video.pause();
